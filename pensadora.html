@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
+    <title>Pensadora</title>
+    <script src="pensadora.js"></script>
+    
+</head>
+
+<style>
+    * {
+        font-family: 'Kalam', cursive;
+        font-size: 17px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+
+    .caja {
+        border:1px solid lightgray;
+        border-radius: 10px;
+        padding: 5px;
+        width: 400px;
+        height: 450px;
+        color: white;
+        background-color: rgba(197, 196, 196, 0.397);
+    
+        
+    }
+
+    .inputcentrado {
+        text-align: center;
+        width: 200px;
+    }
+
+
+    .contenedor {
+        flex-wrap:wrap;
+        margin-top: 20px;
+        display: inline-table;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+
+    video {
+        position:absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: -1;
+    }
+
+        
+
+</style>
+<body>
+    <video autoplay="true" loop src="https://cdn.forms.office.net/forms/formsresources/intelligence/themes/livetheme/grid-lights.mp4" poster="https://cdn.forms.office.net/forms/formsresources/intelligence/themes/livetheme/grid-lights.png" preload="auto" disablepictureinpicture playsinline style="width: 100%; height: auto;"></video>
+    <div class="col-sm 12">
+        <div class="col-sm-4">
+            <span class="contenedor">
+                <section class="caja">
+                    <h2 style="text-align: center;">CALCULADORA</h2>
+                        
+                    Valor 1: <input type="text" id="num1" class="inputcentrado"><br>
+                    Valor 2: <input type="text" id="num2" class="inputcentrado"><br>
+                    Valor 3: <input type="text" id="num3" class="inputcentrado"><br>
+                    <br>
+                    Resultado: <input type="text" id="res" class="inputcentrado" readonly>
+                    <br><br>
+                    <button onclick="Sumar()">Sumar</button>
+                    <button onclick="Restar()">Restar</button>
+                    <button onclick="Multiplicar()">Multiplicar</button>
+                    <button onclick="Dividir()">Dividir</button><br><br>
+                    <button onclick="Multiplo()">Multiplo</button>
+                    <button onclick="Comparar()">Comparar</button>
+
+                </section>
+            </span>
+            
+            <span class="contenedor">
+                <section class="caja">
+                    <h2 style="text-align: center;">CADENA</h2>
+                        
+                    Valor 1: <input type="text" id="text1" class="inputcentrado"><br>
+                    Valor 2: <input type="text" id="text2" class="inputcentrado"><br>
+                     <br>
+                    Resultado: <input type="text" id="res_text" class="inputcentrado" readonly>
+                    <br><br>
+                    <button onclick="Comparartxt()">Comparar</button>
+                    <button onclick="Contarletra()">Contar letras</button>
+                    <button onclick="eliminarespacios()">Espacios</button>
+                    <button onclick="insertar()">Insertar</button><br><br>
+                                        
+                </section>
+            </span>
+
+            <span class="contenedor">
+                <section class="caja">
+                    <h2 style="text-align: center;">VECTORES</h2>
+                        
+                    Valor 1: <input type="text" id="" class="inputcentrado"><br>
+                    Valor 2: <input type="text" id="" class="inputcentrado"><br>
+                    <br>
+                    Resultado: <input type="text" id="" class="inputcentrado" readonly>
+                    <br><br>
+                    <button onclick="crear()">Crear</button>
+                    <button onclick="sumar()">Suma</button>
+                    <button onclick="pares()">Pares</button>
+                                        
+                </section>
+            </span>
+        </div>
+    </div>
+    </body>
+</html>
