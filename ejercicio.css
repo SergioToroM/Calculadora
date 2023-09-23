@@ -1,0 +1,27 @@
+.calculadora {
+    border:1px solid lightgray;
+    border-radius: 10px;
+    padding: 5px;
+    width: 270px;
+    
+}
+
+.CompararCadena {
+    border:1px solid lightgray;
+    border-radius: 10px;
+    padding: 5px;
+    width: 270px;
+    
+}
+
+.vectores {
+    border:1px solid lightgray;
+    border-radius: 10px;
+    padding: 5px;
+    width: 270px;
+    
+}
+
+.inputcentrado {
+    text-align: center
+}
